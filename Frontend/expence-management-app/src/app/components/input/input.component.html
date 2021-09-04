@@ -1,0 +1,11 @@
+<input #text type="text">
+<br>
+<input #amount type="number">
+<br>
+<button (click)="add()">add</button>
+
+<ul>
+    <li  *ngFor="let expense of expenses">
+        {{expense.text}}: {{expense.amount}}
+    </li>
+</ul>
